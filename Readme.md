@@ -36,5 +36,11 @@ Huffman Coding compresses data by assigning shorter binary codes to more frequen
 ### 🧱 Compile
 
 ```bash
-g++ -std=c++17 huffman.cpp huffman-encoding.cpp -o huffmanCoding
+g++ -std=c++17 huffman.cpp huffman-encoding.cpp -o huffmanEncoding
 g++ -std=c++17 huffman.cpp huffman-decoding.cpp -o huffmanDecoding
+
+// compression
+huffmanEncoding in.txt out.huff
+
+// decompression
+huffmanDecoding out.huff in_copy.txt
